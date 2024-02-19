@@ -1,0 +1,90 @@
+/* Keaton Lang, 876611 */
+html{
+    font: normal normal 20px/1.5 Times,"Times New Roman", Georgia, serif;
+
+}
+h1, h2{
+    font-variant: small-caps;
+    color : black;
+}
+figcaption{
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.25rem;
+
+}
+q{
+    font-style: italic;
+    font-family: cursive;
+    font-size: 1.25rem;
+}
+footer p{
+    font-size : 0.75rem;
+}
+body{
+    width : 100%;
+    max-width : 1250px;
+    margin: auto;
+    padding: auto;
+
+}
+#bio{
+    text-align : left;
+}
+#quote{
+    padding: 1rem;
+    border : .25rem solid blue;
+    box-shadow: .25rem .25rem .25rem;
+
+}
+.main-section-figure{
+    width : 80%;
+    height : 80%;
+    padding : 1rem;
+    margin : auto;
+    margin-bottom: 1rem;
+
+}
+.main-section-figure img{
+    width :80%;
+    height : 80%;
+    padding : .75rem;
+    border-radius : 2rem;
+}
+iframe{
+    width : 90%;
+    padding : .25rem; 
+    border : .25rem solid #10F;
+    border-radius : 2rem;
+}
+
+header, footer{
+    background: linear-gradient(180deg, rgba(0,18,255,1) 0%, rgba(225,237,255,1) 23%, rgba(225,237,255,1) 77%, rgba(0,18,255,1) 100%);
+    color : black;
+    text-align : center;
+    border: 1.5px solid #000000
+}
+
+
+.main-section{
+    background-color: rgba(232, 241, 251, 0.941);
+    text-align : center;
+    padding : 1rem;
+}
+
+#absolute-path-image{
+    background-color: hsla(212, 100%, 93%, 1);
+    border : .25rem solid rgb(55, 135, 226);
+    border-radius : 2rem;
+}
+#absolute-path-image figcaption{
+    color: rgb(55, 135, 226);
+}
+#relative-path-image{
+    background-color: hsla(0, 0%, 95%, 0.9);
+    border : .25rem solid rgb(104, 113, 120);
+    border-radius: 2rem;
+}
+#relative-path-image figcaption{
+    color:rgb(104, 113, 120);
+}
