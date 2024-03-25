@@ -1,0 +1,96 @@
+<!--Keaton Lang, 8766111-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descriptoon" content="Austin Matthews Biography">
+    <meta name="keywords" content="ausin matthews, austin, matthews, hockey, NHL, toronto maple leafs, leafs">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Austin Matthews</title>
+</head>
+<body>
+    <header>
+        <h1>AUSTIN MATTHEWS</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li id="home-link"><a href="index.html">Home</a></li>
+            <li id ="contact-link"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Contact</h2>
+        <form name = "contact_form" id="contact_form" method ="post" action="contact.php">
+            <div>
+                <label>Name
+                    <input type="text" name="name" id="name" placeholder="Enter you Name" required autofocus><br>
+                </label>
+                <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" min="2000-01-01" max="2024-03-14" placeholder="Enter you first name" required><br>
+                <label for="colour">What is your favourite colour</label>
+                    <input type="color" name="colour" id="colour"><br>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required><br>
+                <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="555-555-5555" required><br>
+                <label for="">Preffered Method of Contact</label>
+                    <select id="category" name="category">
+                        <option value="select" selected>Select</option>
+                        <option value="phone">Phone</option>
+                        <option value="email">Email</option>
+                    </select><br>
+                <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="3" cols="50"></textarea><br>
+            </div>
+            <div>
+                <label for="robot">I am not a robot</label>
+                    <input type="checkbox" name="robot" id="robot" value="true" required><br>
+            <input type="submit" id="submit" name="submit"  value="Submit">
+            </div>
+        </form>
+    </main>
+    <aside>
+        <h3>FAQs</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year Drafted</th>
+                    <td>2016, 1st overall</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Salary</th>
+                    <td>775,000 USD (2024)</td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th>Born</th>
+                    <td>September 17, 1987 (26 years old)</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Height</th>
+                    <td>6 ft 3 in (191cm)</td>
+                </tr>
+            </tbody>
+            
+        </table>
+        <h3>Resources</h3>
+        <a href="https://www.nhl.com/mapleleafs/player/auston-matthews-8479318" target="_blank">NHL Stats</a>
+        <br><a href="https://www.espn.com/nhl/player/_/id/4024123/auston-matthews" target="_blank">ESPN</a>
+        <br><a href="https://en.wikipedia.org/wiki/Auston_Matthews" target="_blank">Wikipedia</a>
+    </aside>
+    <footer>
+        <p>&copy;<i>Keaton Lang 2024</i></p>
+    </footer>
+
+    
+</body>
+</html>

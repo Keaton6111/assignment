@@ -6,6 +6,8 @@ html{
 h1, h2{
     font-variant: small-caps;
     color : black;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 figcaption{
     font-weight: bold;
@@ -26,6 +28,7 @@ body{
     max-width : 1250px;
     margin: auto;
     padding: auto;
+    background-color: rgba(232, 241, 251, 0.941);
 
 }
 #bio{
@@ -62,7 +65,7 @@ header, footer{
     background: linear-gradient(180deg, rgba(0,18,255,1) 0%, rgba(225,237,255,1) 23%, rgba(225,237,255,1) 77%, rgba(0,18,255,1) 100%);
     color : black;
     text-align : center;
-    border: 1.5px solid #000000
+    border: .1rem solid #000000
 }
 
 
@@ -76,6 +79,9 @@ header, footer{
     background-color: hsla(212, 100%, 93%, 1);
     border : .25rem solid rgb(55, 135, 226);
     border-radius : 2rem;
+    float : right;
+    width : 36%;
+    margin-top: 2.5rem;
 }
 #absolute-path-image figcaption{
     color: rgb(55, 135, 226);
@@ -85,6 +91,149 @@ header, footer{
     border : .25rem solid rgb(104, 113, 120);
     border-radius: 2rem;
 }
+
 #relative-path-image figcaption{
     color:rgb(104, 113, 120);
+}
+nav{
+    background-color: #10F;
+    padding : 0rem 1rem 2rem 1rem;
+    margin : auto;
+}
+nav ul{
+    text-align: center;
+    list-style-type: none;
+    padding: 0.25rem;
+    margin : 0.25rem;
+}
+nav ul li a{
+    background-color: white;
+    border: .1rem solid black;
+    display : block;
+    text-decoration: none;
+    color : #10F;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-style: serif;
+}
+nav ul li a:hover{
+    background-color: black;
+    border-color : 0.1rem solid white;
+    color : white;
+}
+#home-link{
+    float : left;
+    width: 50%;
+}
+#contact-link{
+    float : right;
+    width : 50%;
+}
+aside{
+    margin : .25rem;
+    float : right;
+    width : 30%;
+    text-align: center;
+    color: #000000;
+    font-variant: small-caps;
+    background-color: rgba(232, 241, 251, 0.941);
+}
+main{
+    clear : both;
+    margin : .25rem;
+    padding : .25rem;
+    float : left;
+    width : 65%;
+    background-color: rgba(232, 241, 251, 0.941);
+}
+footer{
+    clear : both;
+}
+#bio{
+    float : left;
+    width : 40%;
+    margin-top: 0;
+}
+.main-section{
+    clear : both;
+}
+th, td{
+    border : .20rem solid blue;
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: small-caps;
+    color: black;
+}
+table{
+    width: 100%;
+}
+aside a{
+    color : black;
+    text-decoration: none;
+    line-height: 1.25rem;
+    float: left;
+}
+aside a:hover{
+    color: blue;
+    text-decoration: none;
+}
+form{
+    padding: .25rem;
+    margin: auto;
+}
+input[type=text],input[type=date],input[type=color],input[type=category],input[type=email],input[type=tel],input[type=submit],textarea{
+    width : 100%;
+}
+
+input[type=checkbox]{
+    height: 1rem;
+    width: 1rem;
+}
+
+select{
+    width : 100%;
+}
+label{
+    color : #000000;
+    font-variant : small-caps;
+    font-weight : 700;
+    text-align: left;
+    font-size: 1rem;
+}
+main h2{
+    text-align : center;
+}
+input[type=submit]:hover{
+    color: blue;
+}
+
+@media (max-width : 900px){
+    html{
+        font-size : 15px;
+    }
+    #bio,  #absolute-path-image {
+        float :none;
+        width : 70%;
+    }
+    
+}
+@media (max-width : 600px){
+    html{
+        font-size : 10px;
+    }
+    #home-link,  #contact-link, main, aside {
+        float : none;
+        width : 98%;
+    }
+    #bio, #absolute-path-image {
+        float :none;
+        width : 90%;
+    }
+    aside{
+        text-align: center;
+    }
+    table{
+        margin : auto;
+    }
 }
